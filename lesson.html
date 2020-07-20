@@ -1,0 +1,130 @@
+<meta charset="utf-8">
+<script>
+    //задание 1
+
+    // запись ++a возвращает значение a после его увеличения на 1, а запись a++ до увеличения и а увеличивается только в следующей строчке 
+
+    //задание 2
+
+    // x = 1 + (a = a*2)
+    // x = 5
+
+    //задание 3
+
+    let a = parseInt(prompt('Введите первое число:'))
+    let b = parseInt(prompt('Введите второе число:'))
+
+    if ((a >= 0) && (b >= 0)) {
+        alert(a - b)
+    } else if ((a < 0) && (b < 0)) {
+        alert(a * b)
+    } else {
+        alert(a + b)
+    }
+
+    //задание 4
+
+    let ddd = parseInt(prompt('Введите число от 1 до 15:'))
+
+    switch (ddd) {
+        case 0:
+            alert(ddd)
+            ddd++
+        case 1:
+            alert(ddd)
+            ddd++
+        case 2:
+            alert(ddd)
+            ddd++
+        case 3:
+            alert(ddd)
+            ddd++
+        case 4:
+            alert(ddd)
+            ddd++
+        case 5:
+            alert(ddd)
+            ddd++
+        case 6:
+            alert(ddd)
+            ddd++
+        case 7:
+            alert(ddd)
+            ddd++
+        case 8:
+            alert(ddd)
+            ddd++
+        case 9:
+            alert(ddd)
+            ddd++
+        case 10:
+            alert(ddd)
+            ddd++
+        case 11:
+            alert(ddd)
+            ddd++
+        case 12:
+            alert(ddd)
+            ddd++
+        case 13:
+            alert(ddd)
+            ddd++
+        case 14:
+            alert(ddd)
+            ddd++
+        case 15:
+            alert(ddd)
+            break
+        default:
+            alert('Можно ввести только число от 0 до 15')
+    }
+
+    //через for было бы проще
+    // for(ddd; ddd<=15; ddd++){
+    //      alert(ddd)
+    //}
+
+
+    //задание 5
+
+    let a = parseInt(prompt('Введите первое число:'))
+    let b = parseInt(prompt('Введите второе число:'))
+
+    function sum(a, b) {
+        return (a + b)
+    }
+
+    function minus(a, b) {
+        return (a - b)
+    }
+
+    function div(a, b) {
+        return (a / b)
+    }
+
+    function multi(a, b) {
+        return (a * b)
+    }
+
+    alert(sum(a, b))
+    alert(minus(a, b))
+    alert(div(a, b))
+    alert(multi(a, b))
+
+    //задание 6
+    
+    //запуталась, ничего не поняла, можно разобрать на уроке это задание?
+
+    //задание 7
+
+    if (null === 0) {
+        alert('равны')
+    } else {
+        alert('не равны')
+    }
+
+    //сравнение приобразует null в число, а равенство нет
+
+    //задание 8
+
+</script>
