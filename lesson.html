@@ -1,0 +1,113 @@
+<meta charset="utf-8">
+<script>
+    //задание 6 к прошлому уроку
+
+    function sum(arg1, arg2) {
+        return arg1 + arg2
+    }
+
+    function minus(arg1, arg2) {
+        return arg1 - arg2
+    }
+
+    function multi(arg1, arg2) {
+        return arg1 * arg2
+    }
+
+    function div(arg1, arg2) {
+        return arg1 / arg2
+    }
+
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case 'сложение':
+                return sum(arg1, arg2)
+                break
+            case 'вычитание':
+                return minus(arg1, arg2)
+                break
+            case 'умножение':
+                return multi(arg1, arg2)
+                break
+            case 'деление':
+                return div(arg1, arg2)
+                break
+        }
+    }
+
+
+    alert(mathOperation(5, 10, 'деление'))
+
+    //задание 1
+
+//    let arr = [2]
+//    let n = 2
+//
+//    function check() {
+//        let i = 0
+//
+//        while ((i < arr.length) && (n % arr[i] != 0)) {
+//
+//            i++
+//
+//            if (i == arr.length) {
+//                console.log(n)
+//                arr.push(n)
+//                break
+//            }
+//        }
+//        return (n)
+//        return (arr)
+//    }
+//
+//    while (n < 100) {
+//        n++
+//        check(n)
+//    }
+
+    //задание 2 и 3
+
+//    let price1 = 8392
+//    let price2 = 3839
+//    let price3 = 82294
+//    let price4 = 2234
+//    let price5 = 32002
+//    let basketArr = []
+//
+//    basketArr.push(price1, price2, price3, price4, price5)
+//
+//    function countBasketPrice(arr) {
+//        let i = 0
+//        let sum = 0
+//
+//        while (i < basketArr.length) {
+//            let price = basketArr[i]
+//            sum += price
+//            i++
+//        }
+//        return sum
+//    }
+//
+//    alert(countBasketPrice(basketArr))
+//
+//    console.log(basketArr)
+//    var result = basketArr.reduce(function(sum, current) {
+//        return sum + current;
+//    }, 0);
+//
+//    console.log(result)
+
+    //задание 4.1 
+
+    //for (let a = 0; a < 9; console.log(a++)) {}
+
+    //задание 4.2
+
+    let lvl = 'x'
+
+    while (lvl.length <= 20) {
+        console.log(lvl)
+        lvl += 'x'
+    }
+
+</script>
