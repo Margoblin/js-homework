@@ -1,0 +1,64 @@
+<meta charset="utf-8">
+<script>
+    // задание 1
+
+    let n = prompt('Введите число от 0 до 999:')
+    let u = 0
+    let t = 0
+    let h = 0
+
+    function numberFnc(n) {
+        u = n % 10
+        t = ((n - u) % 100) / 10
+        h = ((n - t * 10 - u) % 1000) / 100
+
+        const empty = {}
+
+        const myNumber = {
+            units: u,
+            tens: t,
+            hundreds: h,
+        }
+
+        if (n > 999 || n < 0) {
+            console.log('Можно ввести только число от 0 до 999')
+            console.log(empty)
+        } else {
+            console.log(myNumber)
+        }
+
+    }
+
+    numberFnc(n)
+
+    //задание 2
+
+    class product {
+
+        constructor(name, price, quantity, color) {
+            this.name = name
+            this.price = price
+            this.quantity = quantity
+            this.color = color
+        }
+    }
+
+    const prod1 = new product('Apple', 50, 30, 'red')
+    const prod2 = new product('Watermelon', 100, 10, 'green')
+    const prod3 = new product('Strawberry', 250, 500, 'red')
+    const prod4 = new product('Lemon', 20, 300, 'yellow')
+    const prod5 = new product('Coffee beans pack', 800, 10, )
+
+    let allProd = [prod1, prod2, prod3, prod4, prod5]
+    let allPrices = [prod1.price, prod2.price, prod3.price, prod4.price, prod5.price]
+    let sum = 0
+
+    allPrices.forEach(function(item, i, allPrices) {
+        sum += item
+        return sum
+    });
+
+    console.log(allProd)
+    console.log('Сумма корзины: ' + sum)
+
+</script>
